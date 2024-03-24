@@ -6,6 +6,7 @@ st.write("The following model classified the uploaded images into Cloudy, Rainy,
 import tensorflow
 import keras
 import numpy
+from keras.models import load_model
 
 #upload file
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
