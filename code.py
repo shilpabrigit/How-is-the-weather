@@ -15,5 +15,5 @@ if uploaded_file is not None:
    st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
 
 # Load the saved model
-        saved_model_path = r"weather_classif/saved_model.pb"
-        saved_model = load_model(saved_model_path)
+saved_model_path = r"weather_classif/saved_model.pb"
+saved_model = load_model(saved_model_path)
