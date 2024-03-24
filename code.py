@@ -2,5 +2,5 @@
 import streamlit as st
 
 st.title("Weather Recognition model using VGG16")
-st.header("The following model classified the uploaded images into Cloudy, Rainy,Sunny, Sunrise/Sunset")
+st.write("The following model classified the uploaded images into Cloudy, Rainy,Sunny, Sunrise/Sunset")
 
