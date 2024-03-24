@@ -5,8 +5,8 @@ st.markdown('<h1 style="color:black;">VGG 16 Image classification model</h1>', u
 st.markdown('<h2 style="color:gray;">The image classification model classifies image into following categories:</h2>', unsafe_allow_html=True)
 st.markdown('<h3 style="color:gray;"> Cloudy, Rainy, Sunny, Sunrise_Sunset</h3>', unsafe_allow_html=True)
 
-import numpy as np
-import tensorflow as tf
+import numpy 
+import tensorflow
 from tensorflow import keras
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
@@ -19,8 +19,8 @@ saved_model = load_model("path_to_saved_model.h5")
 def preprocess_image(image_file):
     img = image.load_img(image_file, target_size=(224, 224))
     img_array = image.img_to_array(img)
-    img_array = np.expand_dims(img_array, axis=0)
-    img_array = tf.keras.applications.vgg16.preprocess_input(img_array)
+    img_array = numpy.expand_dims(img_array, axis=0)
+    img_array = tensorflow.keras.applications.vgg16.preprocess_input(img_array)
     return img_array
 
 # Define Streamlit app
