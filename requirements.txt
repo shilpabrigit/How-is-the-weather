@@ -1,4 +1,5 @@
 numpy
 streamlit
 tensorflow
+tensorflow.keras
 
