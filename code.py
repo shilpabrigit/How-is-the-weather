@@ -43,7 +43,7 @@ def main():
 
         # Make prediction
         prediction = saved_model.predict(img_array)
-        predicted_class = np.argmax(prediction)
+        predicted_class = numpy.argmax(prediction)
         class_labels = ["Cloudy", "Rainy", "Sunny", "Sunrise_Sunset"]
         predicted_label = class_labels[predicted_class]
 
