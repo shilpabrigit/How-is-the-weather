@@ -1,4 +1,3 @@
-!pip install tensorflow
 
 import streamlit as st
 
@@ -7,6 +6,10 @@ st.markdown('<h2 style="color:gray;">The image classification model classifies i
 st.markdown('<h3 style="color:gray;"> Cloudy, Rainy, Sunny, Sunrise_Sunset</h3>', unsafe_allow_html=True)
 
 import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import load_model
 
 
 # Load the saved model
