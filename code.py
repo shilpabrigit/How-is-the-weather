@@ -7,9 +7,9 @@ st.markdown('<h3 style="color:gray;"> Cloudy, Rainy, Sunny, Sunrise_Sunset</h3>'
 
 import numpy 
 import tensorflow
-from tensorflow import keras
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.models import load_model
+import keras
+from keras.preprocessing import image
+from keras.models import load_model
 
 
 # Load the saved model
